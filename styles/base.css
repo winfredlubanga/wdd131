@@ -1,0 +1,109 @@
+/* ---------- CSS RESET ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- VARIABLES ---------- */
+:root {
+    --primary-color: #003366;
+    --secondary-color: #f4f4f4;
+    --accent-color: #ff9800;
+    --text-color: #222;
+}
+
+/* ---------- GLOBAL STYLES ---------- */
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* REQUIRED: span as block */
+#course-title {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* ---------- NAVIGATION (Flexbox) ---------- */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect (REQUIRED) */
+nav a:hover {
+    background-color: var(--accent-color);
+    color: #000;
+}
+
+/* ---------- MAIN LAYOUT ---------- */
+main {
+    max-width: 960px;
+    /* REQUIRED limited width */
+    margin: 2rem auto;
+    /* centers horizontally */
+    padding: 0 1rem;
+}
+
+/* ---------- GRID FOR CARDS ---------- */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* ---------- CARDS ---------- */
+.card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    font-family: "Playfair Display", serif;
+    margin-bottom: 0.5rem;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin: 0.5rem 0;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
