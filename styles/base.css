@@ -190,3 +190,12 @@ footer p {
     margin: 0;
     /* remove extra margin */
 }
+
+/* ---------- GRID FOR CARDS ---------- */
+.cards-grid {
+    display: grid;
+    /* satisfies assignment requirement */
+    grid-template-columns: 1fr;
+    /* 1 column so they stack */
+    gap: 1.5rem;
+}
