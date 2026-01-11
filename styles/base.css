@@ -68,11 +68,13 @@ main {
     padding: 0 1rem;
 }
 
-/* ---------- GRID FOR CARDS ---------- */
+/* ---------- MAIN LAYOUT ---------- */
 main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: block;
+    /* removes grid layout */
 }
 
 main h1 {
@@ -104,41 +106,6 @@ main h1 {
 main h1 {
     text-align: center;
     margin-bottom: 1.5rem;
-}
-
-/* ---------- ABOUT ME IMAGE ---------- */
-.about-me img {
-    display: block;
-    margin: 0.5rem auto;
-    /* centers the image */
-    width: 150px;
-    /* adjust size if needed */
-    height: auto;
-    border-radius: 6px;
-    /* optional rounded corners */
-}
-
-/* ---------- ABOUT ME TEXT ---------- */
-.about-me p {
-    text-align: center;
-    /* centers the paragraph under image */
-}
-
-/* ---------- COUNTRY IMAGE ---------- */
-.my-country img {
-    display: block;
-    margin: 0.5rem auto;
-    /* centers the image */
-    width: 150px;
-    /* adjust size if needed */
-    height: auto;
-    border-radius: 6px;
-}
-
-/* ---------- COUNTRY TEXT ---------- */
-.my-country p {
-    text-align: center;
-    /* centers the paragraph under image */
 }
 
 /* ---------- ABOUT ME FLEX ---------- */
@@ -187,4 +154,39 @@ footer {
 
 footer p {
     margin: 0.3rem 0;
+}
+
+/* ---------- CENTER SECTION TITLES ---------- */
+.about-me h2,
+.my-country h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* ---------- FLEX FOR ABOUT ME ---------- */
+.about-container,
+.country-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* makes it responsive on small screens */
+}
+
+/* ---------- IMAGE STYLING ---------- */
+.about-container img,
+.country-container img {
+    width: 150px;
+    /* adjust as needed */
+    height: auto;
+    border-radius: 6px;
+}
+
+/* ---------- TEXT STYLING ---------- */
+.about-container p,
+.country-container p {
+    max-width: 400px;
+    /* keeps text readable */
+    margin: 0;
+    /* remove extra margin */
 }
