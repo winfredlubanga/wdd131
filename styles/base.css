@@ -75,6 +75,11 @@ main {
     gap: 1.5rem;
 }
 
+main h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
 /* ---------- CARDS ---------- */
 .card {
     background-color: white;
@@ -95,9 +100,49 @@ main {
     margin: 0.5rem 0;
 }
 
+/* ---------- CENTER NAME ---------- */
+main h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* ---------- ABOUT ME IMAGE ---------- */
+.about-me img {
+    display: block;
+    margin: 0.5rem auto;
+    /* centers the image */
+    width: 150px;
+    /* adjust size if needed */
+    height: auto;
+    border-radius: 6px;
+    /* optional rounded corners */
+}
+
+/* ---------- ABOUT ME TEXT ---------- */
+.about-me p {
+    text-align: center;
+    /* centers the paragraph under image */
+}
+
+/* ---------- COUNTRY IMAGE ---------- */
+.my-country img {
+    display: block;
+    margin: 0.5rem auto;
+    /* centers the image */
+    width: 150px;
+    /* adjust size if needed */
+    height: auto;
+    border-radius: 6px;
+}
+
+/* ---------- COUNTRY TEXT ---------- */
+.my-country p {
+    text-align: center;
+    /* centers the paragraph under image */
+}
+
 /* ---------- ABOUT ME FLEX ---------- */
 .about-container {
-    display: flex;
     align-items: center;
     gap: 1rem;
 }
@@ -120,7 +165,6 @@ main {
 
 /* ---------- COUNTRY FLEX ---------- */
 .country-container {
-    display: flex;
     align-items: center;
     gap: 1rem;
 }
