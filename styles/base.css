@@ -75,14 +75,21 @@ main h1 {
 
 /* ---------- CARDS ---------- */
 .card {
-    background-color: white;
+    background-color: #ffffff;
     padding: 1rem;
-    border-radius: 6px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .card h2 {
     font-family: "Playfair Display", serif;
+    background-color: #1f4e79;
+    color: white;
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 
@@ -193,23 +200,6 @@ footer p {
     max-width: 1100px;
     margin: 0 auto;
     padding: 1rem;
-}
-
-/* Card styling */
-.card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #ffffff;
-    overflow: hidden;
-}
-
-/* Card headers */
-.card h2 {
-    background-color: #1f4e79;
-    color: white;
-    padding: 0.75rem;
-    text-align: center;
-    font-size: 1.2rem;
 }
 
 /* About section */
