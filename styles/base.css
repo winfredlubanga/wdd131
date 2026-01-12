@@ -184,3 +184,54 @@ footer p {
     /* 1 column so they stack */
     gap: 1.5rem;
 }
+
+/* Grid layout */
+.home-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Card styling */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+/* Card headers */
+.card h2 {
+    background-color: #1f4e79;
+    color: white;
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* About section */
+.about p {
+    padding: 1rem;
+}
+
+/* Resources section */
+.resources ul {
+    list-style: disc;
+    padding: 1rem 2rem;
+}
+
+.resources li {
+    margin-bottom: 0.5rem;
+}
+
+.resources a {
+    color: #1f4e79;
+    text-decoration: underline;
+}
+
+.resources a:hover {
+    color: #ff9800;
+}
