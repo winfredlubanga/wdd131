@@ -61,19 +61,15 @@ main {
     max-width: 800px;
     margin: 1.5rem auto;
     padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 }
 
 main h1 {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     margin-bottom: 1.5rem;
-}
-
-/* Grid Layout (Mobile = 1 column) */
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
 }
 
 /* Figure / Images */
