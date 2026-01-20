@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Africa</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>South Africa</h1>
+    </header>
+
+    <!-- HERO IMAGE -->
+    <section class="hero">
+        <picture>
+            <source srcset="images/hero-large.webp" media="(min-width: 900px)">
+            <source srcset="images/hero-medium.webp" media="(min-width: 600px)">
+            <img src="images/hero-small.webp" alt="Landscape of South Africa">
+        </picture>
+    </section>
+
+    <main>
+        <!-- ABOUT -->
+        <section class="card">
+            <h2>About South Africa</h2>
+            <p>
+                South Africa is located at the southern tip of Africa and is known for
+                its diverse cultures, wildlife, and landscapes. It has 11 official
+                languages and is home to famous landmarks such as Table Mountain,
+                Kruger National Park, and Cape Town.
+            </p>
+        </section>
+
+        <!-- WEATHER -->
+        <section class="card weather">
+            <h2>Weather</h2>
+
+            <div class="weather-info">
+                <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
+                <p>Temperature: <span id="temperature">18</span> °C</p>
+                <p>Wind Speed: <span id="windspeed">10</span> km/h</p>
+                <p>Wind Chill: <span id="windchill">N/A</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="year"></span> | Winnie Lubanga |
+            Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>
