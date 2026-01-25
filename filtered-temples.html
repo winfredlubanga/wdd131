@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Temple Album</title>
-
+    <title>Filtered Temple Album</title>
     <meta name="description"
-        content="Temple Album showcasing images and information about temples, designed with responsive layout, modern CSS, and JavaScript interactivity.">
+        content="Temple Album showcasing images and information about temples, dynamically generated and filterable.">
     <meta name="author" content="Winfred Lubanga">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,9 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css">
-    <script src="scripts/temples.js" defer></script>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <script src="scripts/filtered-temples.js" defer></script>
 </head>
 
 <body>
@@ -28,45 +26,20 @@
         <nav>
             <button id="menuButton" aria-label="Menu">&#9776;</button>
             <ul id="navMenu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
+                <li><button id="homeBtn">Home</button></li>
+                <li><button id="oldBtn">Old</button></li>
+                <li><button id="newBtn">New</button></li>
+                <li><button id="largeBtn">Large</button></li>
+                <li><button id="smallBtn">Small</button></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <h1>Temples</h1>
-
-        <figure><img src="images/temple1.jpg" alt="Temple 1">
-            <figcaption>Temple 1</figcaption>
-        </figure>
-        <figure><img src="images/temple2.jpg" alt="Temple 2">
-            <figcaption>Temple 2</figcaption>
-        </figure>
-        <figure><img src="images/temple3.jpg" alt="Temple 3">
-            <figcaption>Temple 3</figcaption>
-        </figure>
-        <figure><img src="images/temple4.jpg" alt="Temple 4">
-            <figcaption>Temple 4</figcaption>
-        </figure>
-        <figure><img src="images/temple5.jpg" alt="Temple 5">
-            <figcaption>Temple 5</figcaption>
-        </figure>
-        <figure><img src="images/temple6.jpg" alt="Temple 6">
-            <figcaption>Temple 6</figcaption>
-        </figure>
-        <figure><img src="images/temple7.jpg" alt="Temple 7">
-            <figcaption>Temple 7</figcaption>
-        </figure>
-        <figure><img src="images/temple8.jpg" alt="Temple 8">
-            <figcaption>Temple 8</figcaption>
-        </figure>
-        <figure><img src="images/temple9.jpg" alt="Temple 9">
-            <figcaption>Temple 9</figcaption>
-        </figure>
+        <section id="temple-cards" class="temple-cards">
+            <!-- Temple cards will be dynamically generated here -->
+        </section>
     </main>
 
     <footer>
