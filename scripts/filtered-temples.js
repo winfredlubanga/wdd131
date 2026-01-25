@@ -101,24 +101,31 @@ function displayTemples(filteredTemples) {
 // ===============================
 // Filter Buttons
 // ===============================
-document.getElementById('homeBtn').addEventListener('click', () => displayTemples(temples));
+document.getElementById('homeBtn').addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent link from navigating
+    displayTemples(temples);
+});
 
-document.getElementById('oldBtn').addEventListener('click', () => {
+document.getElementById('oldBtn').addEventListener('click', (e) => {
+    e.preventDefault();
     const oldTemples = temples.filter(t => new Date(t.dedicated) < new Date('1900-01-01'));
     displayTemples(oldTemples);
 });
 
-document.getElementById('newBtn').addEventListener('click', () => {
+document.getElementById('newBtn').addEventListener('click', (e) => {
+    e.preventDefault();
     const newTemples = temples.filter(t => new Date(t.dedicated) > new Date('2000-01-01'));
     displayTemples(newTemples);
 });
 
-document.getElementById('largeBtn').addEventListener('click', () => {
+document.getElementById('largeBtn').addEventListener('click', (e) => {
+    e.preventDefault();
     const largeTemples = temples.filter(t => t.area > 90000);
     displayTemples(largeTemples);
 });
 
-document.getElementById('smallBtn').addEventListener('click', () => {
+document.getElementById('smallBtn').addEventListener('click', (e) => {
+    e.preventDefault();
     const smallTemples = temples.filter(t => t.area < 10000);
     displayTemples(smallTemples);
 });
