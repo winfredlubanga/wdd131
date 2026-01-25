@@ -53,25 +53,25 @@ const temples = [
     },
     // Additional temples
     {
-        templeName: "Salt Lake City Utah",
-        location: "Salt Lake City, Utah, United States",
-        dedicated: "1893, April, 6",
-        area: 253000,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake-city/400x250/salt-lake-city-temple-1.jpg"
+        templeName: "Nairobi Kenya",
+        location: "Nairobi, Kenya",
+        dedicated: "2019-10-13",
+        area: 18600,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/nairobi-kenya/400x250/nairobi-kenya-temple-exterior.jpg"
     },
     {
-        templeName: "Rome Italy",
-        location: "Rome, Italy",
-        dedicated: "2019, March, 10",
-        area: 25800,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x250/rome-italy-temple-1.jpg"
+        templeName: "Kampala Uganda",
+        location: "Kampala, Uganda",
+        dedicated: "2008-03-01",
+        area: 15000,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/kampala-uganda/400x250/kampala-uganda-temple-exterior.jpg"
     },
     {
-        templeName: "Tokyo Japan",
-        location: "Tokyo, Japan",
-        dedicated: "1980, October, 27",
-        area: 102000,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/tokyo-japan/400x250/tokyo-japan-temple-1.jpg"
+        templeName: "Dar es Salaam Tanzania",
+        location: "Dar es Salaam, Tanzania",
+        dedicated: "2022-06-05",
+        area: 14000,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/dar-es-salaam-tanzania/400x250/dar-es-salaam-tanzania-temple-exterior.jpg"
     }
 ];
 
