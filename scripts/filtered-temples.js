@@ -1,6 +1,4 @@
-// ===============================
 // Temple Data Array
-// ===============================
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -51,7 +49,6 @@ const temples = [
         area: 116642,
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-    // Additional temples
     {
         templeName: "Nairobi Kenya",
         location: "Nairobi, Kenya",
@@ -75,9 +72,7 @@ const temples = [
     }
 ];
 
-// ===============================
 // Display Temple Cards
-// ===============================
 function displayTemples(filteredTemples) {
     const container = document.getElementById('temple-cards');
     container.innerHTML = ''; // Clear previous content
@@ -98,11 +93,9 @@ function displayTemples(filteredTemples) {
     });
 }
 
-// ===============================
 // Filter Buttons
-// ===============================
 document.getElementById('homeBtn').addEventListener('click', (e) => {
-    e.preventDefault(); // Prevent link from navigating
+    e.preventDefault(); //prevent link from navigating
     displayTemples(temples);
 });
 
@@ -130,15 +123,11 @@ document.getElementById('smallBtn').addEventListener('click', (e) => {
     displayTemples(smallTemples);
 });
 
-// ===============================
 // Footer Dynamic Content
-// ===============================
 document.getElementById('currentyear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = document.lastModified;
 
-// ===============================
 // Hamburger Menu
-// ===============================
 const menuButton = document.querySelector("#menuButton");
 const navMenu = document.querySelector("#navMenu");
 
@@ -147,8 +136,6 @@ menuButton.addEventListener("click", () => {
     menuButton.textContent = navMenu.classList.contains("open") ? "✖" : "☰";
 });
 
-// ===============================
 // Initial Load - show all temples
-// ===============================
 displayTemples(temples);
 
