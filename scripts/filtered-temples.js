@@ -57,21 +57,21 @@ const temples = [
         location: "Nairobi, Kenya",
         dedicated: "2019-10-13",
         area: 18600,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/nairobi-kenya/400x250/nairobi-kenya-temple-exterior.jpg"
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/nairobi-kenya-temple/nairobi-kenya-temple-60488-main.jpg"
     },
     {
-        templeName: "Kampala Uganda",
-        location: "Kampala, Uganda",
-        dedicated: "2008-03-01",
-        area: 15000,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/kampala-uganda/400x250/kampala-uganda-temple-exterior.jpg"
+        templeName: "Heber Valley Utah",
+        location: "Heber City, Utah, United States",
+        dedicated: "2022-10-08",
+        area: 87626,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/heber-valley-utah-temple/heber-valley-utah-temple-30547-main.jpg"
     },
     {
-        templeName: "Dar es Salaam Tanzania",
-        location: "Dar es Salaam, Tanzania",
-        dedicated: "2022-06-05",
-        area: 14000,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/dar-es-salaam-tanzania/400x250/dar-es-salaam-tanzania-temple-exterior.jpg"
+        templeName: "Bangok, Thailand",
+        location: "Bangok, Thailand",
+        dedicated: "2023-10-22",
+        area: 48525,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/bangkok-thailand-temple/bangkok-thailand-temple-40037-main.jpg"
     }
 ];
 
