@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Winfred Lubanga">
+    <meta name="description"
+        content="Analytical Chemistry Calculator helps students and lab technicians calculate molar mass, solution concentration, and required mass accurately.">
+
     <title>Analytical Chemistry Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,7 +17,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="calculator.html">Calculator</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="references.html">References</a></li>
@@ -21,22 +26,39 @@
     </header>
 
     <main>
-        <h1>Welcome to the Analytical Chemistry Calculator</h1>
-        <p>This website helps students and laboratory technicians perform accurate chemical solution calculations.</p>
-
-        <section>
-            <h2>Key Features</h2>
-            <ul>
-                <li>Calculate molar mass of any chemical formula</li>
-                <li>Compute mass required for a given molarity and volume</li>
-                <li>Easy-to-use, interactive web interface</li>
-                <li>Stores your last calculation in your browser</li>
-            </ul>
+        <section class="hero">
+            <img src="images/lab-flasks.jpg" alt="Laboratory flasks" loading="lazy">
+            <div class="hero-text">
+                <h1>Welcome to the Analytical Chemistry Calculator</h1>
+                <p>Accurate solution calculations for students and lab technicians.</p>
+                <a href="calculator.html" class="button">Start Calculating</a>
+            </div>
         </section>
 
-        <section>
+        <section class="features">
+            <h2>Key Features</h2>
+            <div class="feature-cards">
+                <div class="card">
+                    <img src="images/molar-mass.jpg" alt="Molar mass calculation" loading="lazy">
+                    <h3>Molar Mass Calculator</h3>
+                    <p>Calculate molar mass for any chemical formula with ease.</p>
+                </div>
+                <div class="card">
+                    <img src="images/solution.jpg" alt="Solution preparation" loading="lazy">
+                    <h3>Solution Mass Calculator</h3>
+                    <p>Compute the mass required for a given molarity and volume.</p>
+                </div>
+                <div class="card">
+                    <img src="images/lab-work.jpg" alt="Lab work" loading="lazy">
+                    <h3>User-Friendly Interface</h3>
+                    <p>Interactive design stores your last calculation in your browser.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="get-started">
             <h2>Get Started</h2>
-            <p>Click on the Calculator link in the navigation menu to start performing calculations immediately!</p>
+            <p>Click the button below to start using the calculator immediately.</p>
             <a href="calculator.html" class="button">Go to Calculator</a>
         </section>
     </main>
