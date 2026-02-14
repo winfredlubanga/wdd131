@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <title>Contact | Kenya Travel Guide</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact Kenya Travel Guide for travel inquiries.">
+    <meta name="description"
+        content="Contact Kenya Travel Guide for destination inquiries, travel planning assistance, and tourism information.">
     <meta name="author" content="Winfred Lubanga">
 
     <link rel="stylesheet" href="css/styles.css">
@@ -15,43 +16,59 @@
 <body>
 
     <header>
-        <h1>Kenya Travel Guide</h1>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <h1>Kenya Travel Guide</h1>
+            <nav aria-label="Primary Navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
 
         <section>
             <h2>Contact Us</h2>
+            <p>
+                Have questions about a destination or need help planning your trip?
+                Fill out the form below and we will respond as soon as possible.
+            </p>
 
-            <form id="contactForm">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" required>
+            <form id="contactForm" method="post" action="#">
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
+                <div>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                </div>
 
-                <label for="destination">Preferred Destination:</label>
-                <select id="destination" required>
-                    <option value="">Select a destination</option>
-                    <option value="Maasai Mara">Maasai Mara</option>
-                    <option value="Diani Beach">Diani Beach</option>
-                    <option value="Mount Kenya">Mount Kenya</option>
-                </select>
+                <div>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
 
-                <label for="message">Message:</label>
-                <textarea id="message" required></textarea>
+                <div>
+                    <label for="destination">Preferred Destination</label>
+                    <select id="destination" name="destination" required aria-required="true">
+                        <option value="">Select a destination</option>
+                        <option value="Maasai Mara">Maasai Mara</option>
+                        <option value="Diani Beach">Diani Beach</option>
+                        <option value="Mount Kenya">Mount Kenya</option>
+                    </select>
+                </div>
 
-                <button type="submit">Submit</button>
+                <div>
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                </div>
+
+                <button type="submit">Submit Inquiry</button>
+
             </form>
 
-            <div id="formResponse"></div>
+            <div id="formResponse" aria-live="polite"></div>
 
         </section>
 

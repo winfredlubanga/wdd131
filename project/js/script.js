@@ -2,35 +2,39 @@ const destinations = [
     {
         name: "Maasai Mara",
         image: "images/maasai-mara.jpg",
-        description: "Famous for wildlife and the Great Migration."
+        description: "Experience the world-famous Great Migration and diverse wildlife in Kenya’s most iconic national reserve."
     },
     {
         name: "Diani Beach",
         image: "images/diani-beach.jpg",
-        description: "White sandy beaches and crystal clear waters."
+        description: "Relax on white sandy beaches and enjoy turquoise waters along Kenya’s beautiful coastline."
     },
     {
         name: "Mount Kenya",
         image: "images/mount-kenya.jpg",
-        description: "Africa's second highest mountain."
+        description: "Climb Africa’s second-highest mountain and explore breathtaking alpine landscapes."
     }
 ];
 
-// Function 1: Display destinations
 function displayDestinations() {
     const container = document.querySelector("#destinations");
 
+    if (!container) return;
+
     container.innerHTML = destinations.map(destination => `
-        <div class="card">
-            <img src="${destination.image}" alt="${destination.name}" loading="lazy">
+        <article class="card">
+            <img src="${destination.image}" 
+                 alt="Scenic view of ${destination.name}" 
+                 loading="lazy">
             <h3>${destination.name}</h3>
             <p>${destination.description}</p>
-            <button class="save-btn" data-name="${destination.name}">Save</button>
-        </div>
+            <button class="save-btn" data-name="${destination.name}">
+                Save Destination
+            </button>
+        </article>
     `).join("");
 }
 
-// Function 2: Save favorite to localStorage
 function saveFavorite(event) {
     if (event.target.classList.contains("save-btn")) {
 
@@ -40,20 +44,13 @@ function saveFavorite(event) {
         if (!favorites.includes(name)) {
             favorites.push(name);
             localStorage.setItem("favorites", JSON.stringify(favorites));
-            alert(`${name} added to favorites!`);
+            alert(`${name} has been added to your favorites.`);
         } else {
-            alert(`${name} is already saved.`);
+            alert(`${name} is already in your favorites list.`);
         }
     }
 }
 
-// Event Listener
-document.addEventListener("DOMContentLoaded", () => {
-    displayDestinations();
-    document.querySelector("#destinations").addEventListener("click", saveFavorite);
-});
-
-// Function 3: Handle Contact Form
 function handleFormSubmission(event) {
     event.preventDefault();
 
@@ -61,36 +58,34 @@ function handleFormSubmission(event) {
     const email = document.querySelector("#email").value.trim();
     const destination = document.querySelector("#destination").value;
     const message = document.querySelector("#message").value.trim();
-
     const responseDiv = document.querySelector("#formResponse");
 
-    if (name === "" || email === "" || destination === "" || message === "") {
-        responseDiv.innerHTML = `<p>Please fill in all fields.</p>`;
+    if (!name || !email || !destination || !message) {
+        responseDiv.innerHTML = `<p>Please complete all required fields before submitting.</p>`;
         return;
     }
 
-    const formData = {
-        name,
-        email,
-        destination,
-        message
-    };
+    const submission = { name, email, destination, message };
 
-    localStorage.setItem("contactSubmission", JSON.stringify(formData));
+    localStorage.setItem("contactSubmission", JSON.stringify(submission));
 
     responseDiv.innerHTML = `
-        <p>Thank you, ${name}! We will contact you about ${destination} soon.</p>
+        <p>Thank you, ${name}. We will contact you shortly regarding ${destination}.</p>
     `;
 
     document.querySelector("#contactForm").reset();
 }
 
-// Add event listener safely
 document.addEventListener("DOMContentLoaded", () => {
+    displayDestinations();
 
-    if (document.querySelector("#contactForm")) {
-        document.querySelector("#contactForm")
-            .addEventListener("submit", handleFormSubmission);
+    const destinationContainer = document.querySelector("#destinations");
+    if (destinationContainer) {
+        destinationContainer.addEventListener("click", saveFavorite);
     }
 
+    const form = document.querySelector("#contactForm");
+    if (form) {
+        form.addEventListener("submit", handleFormSubmission);
+    }
 });

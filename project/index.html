@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Kenya Travel Guide</title>
+    <title>Kenya Travel Guide | Explore Top Destinations</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore Kenya's top tourist destinations, travel tips, and cultural highlights.">
+    <meta name="description"
+        content="Explore Kenya's top tourist destinations, travel tips, wildlife parks, beaches, and cultural highlights to plan your perfect adventure.">
     <meta name="author" content="Winfred Lubanga">
 
     <link rel="stylesheet" href="css/styles.css">
@@ -15,25 +16,30 @@
 <body>
 
     <header>
-        <h1>Kenya Travel Guide</h1>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <h1>Kenya Travel Guide</h1>
+            <nav aria-label="Primary Navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
 
         <section class="hero">
             <h2>Discover the Beauty of Kenya</h2>
-            <p>Plan your next adventure with our trusted travel insights.</p>
+            <p>
+                From breathtaking wildlife safaris to pristine coastal beaches,
+                Kenya offers unforgettable travel experiences for every explorer.
+            </p>
         </section>
 
-        <section>
-            <h2>Top Destinations</h2>
+        <section aria-labelledby="destinations-heading">
+            <h2 id="destinations-heading">Top Travel Destinations</h2>
             <div id="destinations" class="card-container"></div>
         </section>
 
