@@ -6,7 +6,7 @@ const destinations = [
     },
     {
         name: "Diani Beach",
-        image: "images/diani.jpg",
+        image: "images/diani-beach.jpg",
         description: "White sandy beaches and crystal clear waters."
     },
     {
